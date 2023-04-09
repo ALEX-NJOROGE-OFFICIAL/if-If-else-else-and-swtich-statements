@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p id="demo"></p>
+<p id="trust"></p>
+<script>
+    let text;
+switch (new Date().getDay()){
+    case 0:
+        text = "Today is Monday";
+        break;
+        case 1:
+            text = "Today is Tuesday";
+            break;
+            case 2:
+            text ="Today is Wednesday";
+            break;
+            case 1:
+            text = "Today is Sunday";
+            break;
+            case 3:
+            text ="Today is Friday";
+            break
+            case 4:
+            text = "Today is Satuday";
+            break
+            default:
+            text ="Error";
+
+}
+document.getElementById("trust").innerHTML = text;
+
+
+
+//const time = new Date().getHours();
+let greeting;
+
+if (time < 10){
+    greeting = 'Hello';
+}else if (time === 11){ 
+    greeting = 'Hi';
+}else {
+    greeting = "Never mind"
+}
+
+document.getElementById("demo").innerHTML = greeting;
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
